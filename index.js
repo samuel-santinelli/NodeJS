@@ -28,10 +28,10 @@ const port = 3000;
 
 const server = http.createServer((req,res) => {
     res.setHeader('Content-Type', 'text/plain');
-    res.end('Conexão realizada com sucesso')
+    res.end('Conexão realizada com sucesso!')
 
 });
 
 server.listen(port,hostname, () => {
-    console.log('Servidor rodando com sucesso')
+    console.log('Servidor rodando com sucesso!')
 });
