@@ -5,11 +5,8 @@ const app = express();
 const path = require('path');
 const router = express.Router();
 
-
 router.get('/sobre',function(req,res){
     res.sendFile(path.join(__dirname +'/sobre.html'));
-
-
 })
 
 app.use('/',router);
@@ -17,7 +14,6 @@ app.use('/',router);
 app.listen(process.env.port || 3000);
 
 console.log("Server rodando perfeitamente")
-
 
 // Request do servidor http
 
@@ -32,6 +28,7 @@ const server = http.createServer((req,res) => {
 
 });
 
+// Verificando se o servidor foi conectado
 server.listen(port,hostname, () => {
     console.log('Servidor rodando com sucesso!')
 });
